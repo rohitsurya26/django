@@ -8,5 +8,9 @@
 
 #     return HttpResponse('Hello, World!')
 from django.views.generic import TemplateView
+
 class homePageView(TemplateView):
     template_name = 'manga/home.html'
+
+class AboutPageView(TemplateView):
+    template_name = 'manga/about.html'    

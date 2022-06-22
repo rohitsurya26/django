@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles','manga',
 ]
 
 MIDDLEWARE = [
@@ -51,10 +51,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'book.urls'
 
+# [os.path.join(BASE_DIR, 'templates')]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS':   [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
